@@ -19,7 +19,7 @@ Defining all available Eureka Instances.
 java -jar target\ServiceLogging-0.0.1-SNAPSHOT.jar
 
 ### Linux (service enabled)
-./target/ServiceLoggin-0.0.1-SNAPSHOT.jar start
+./target/ServiceLogging-0.0.1-SNAPSHOT.jar start
 
 ## Docker build
 docker build -t servicelogs:latest . --build-arg JAR_FILE=./target/ServiceLogs-0.0.1-SNAPSHOT.jar
