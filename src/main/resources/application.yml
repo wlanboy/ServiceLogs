@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: servicelogging
+  cloud:
+    config:
+      failFast: false
+      discovery:
+        serviceId: serviceconfig
+        enabled: true
+
+server:
+  port: ${PORT:9411}
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: ${EUREKA_ZONE:http://127.0.0.1:8761/eureka/}   
+      
+zipkin:
+  storage:
+    type: mem
