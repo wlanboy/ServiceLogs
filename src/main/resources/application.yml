@@ -14,9 +14,9 @@ server:
 eureka:
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: ${EUREKA_ZONE:http://127.0.0.1:8761/eureka/}   
+      defaultZone: ${EUREKA_ZONE:http://127.0.0.1:8761/eureka/}
       
 zipkin:
   storage:
