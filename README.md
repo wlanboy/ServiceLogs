@@ -25,7 +25,7 @@ java -jar target\ServiceLogging-0.0.1-SNAPSHOT.jar
 docker build -t servicelogs:latest . --build-arg JAR_FILE=./target/ServiceLogs-0.0.1-SNAPSHOT.jar
 
 ## Docker run
-docker run --name servicelogs -d -p 9411:9411 --link serviceregistry:serviceregistry --link serviceconfig:serviceconfig -v /tmp:/tmp -e EUREKA_ZONE=http://serviceregistry:8761/eureka/ servicelogs:latest
+docker run --name servicelogs -d -p 9411:9411 --link serviceregistry:serviceregistry -v /tmp:/tmp -e EUREKA_ZONE=http://serviceregistry:8761/eureka/ servicelogs:latest
 
 ## Check Traces
 http://localhost:9411/zipkin
