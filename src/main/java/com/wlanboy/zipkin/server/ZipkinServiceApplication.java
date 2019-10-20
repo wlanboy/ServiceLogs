@@ -19,7 +19,6 @@ import zipkin.server.internal.RegisterZipkinHealthIndicators;
 //import zipkin.server.ZipkinServer;
 
 @EnableZipkinServer
-@EnableDiscoveryClient
 @EnableConfigurationProperties(MiwZipkinUiProperties.class)
 @SpringBootApplication
 public class ZipkinServiceApplication { // extends ZipkinServer
