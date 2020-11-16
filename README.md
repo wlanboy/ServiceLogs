@@ -1,16 +1,16 @@
+![Java CI with Maven](https://github.com/wlanboy/ServiceLogs/workflows/Java%20CI%20with%20Maven/badge.svg?branch=master)
+![Docker build and publish image](https://github.com/wlanboy/ServiceLogs/workflows/Docker%20build%20and%20publish%20image/badge.svg?branch=v0.2)
+
 # ServiceLogs
 Spring Framework based Service Logging
 
 Based on https://projects.spring.io/spring-cloud/ and http://cloud.spring.io/spring-cloud-sleuth/.
 
 ## Dependencies
-At least: Java 8 and Maven 3.5
+At least: Java 11 and Maven 3.5
 
 ## Build Service Logging
 mvn package -DskipTests=true
-
-## Run Service Logging
-### Environment variables
 
 ### Windows
 java -jar target\servicelogs-0.0.2-SNAPSHOT.jar
